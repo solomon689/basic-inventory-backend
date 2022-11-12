@@ -25,6 +25,7 @@ export class ProductController {
             return res.status(HttpStatus.CREATED).json({
                 statusCode: HttpStatus.CREATED,
                 message: 'Producto creado con exito!',
+                data: createdProduct,
             });
         } catch (error) {
             console.error(error);
